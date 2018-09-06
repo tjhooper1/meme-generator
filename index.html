@@ -10,17 +10,17 @@
 <body>
     
     <div id="container">
-        <div class="left-block">
-            <div class="img">
-                <img id="image" src="assets/placeholder.png" alt="place holder" width="500">
-            </div>
+        <div class="left-block"> 
+            <img id="image" src="assets/placeholder.png" alt="place holder">
+            <div class="top-text">hello world</div>
+            <div class="bottom-text"></div>   
         </div>
         <div class="right-block">
             <div class="form-group">
                 <form id="submitForm">
                     <input onchange="test()" id="file" type="file" name="file" accept="image/gif, image/jpeg, image/png">
-                    <input type="text" name="top-text" placeholder="enter top text">
-                    <input type="text" name="bottom-text" placeholder="enter bottom text">
+                    <input onchange="changeTopText(this)" id="topText" type="text" name="top-text" placeholder="enter top text">
+                    <input onchange="changeBottomText(this)" id="bottomText" type="text" name="bottom-text" placeholder="enter bottom text">
                     <button>Generate meme</button>
                 </form>
             </div>
