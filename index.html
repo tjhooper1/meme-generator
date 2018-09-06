@@ -12,13 +12,13 @@
     <div id="container">
         <div class="left-block">
             <div class="img">
-                <img src="assets/placeholder.png" alt="place holder">
+                <img id="image" src="assets/placeholder.png" alt="place holder" width="500">
             </div>
         </div>
         <div class="right-block">
             <div class="form-group">
                 <form id="submitForm">
-                    <input type="file" name="file" accept="image/gif, image/jpeg, image/png">
+                    <input onchange="test()" id="file" type="file" name="file" accept="image/gif, image/jpeg, image/png">
                     <input type="text" name="top-text" placeholder="enter top text">
                     <input type="text" name="bottom-text" placeholder="enter bottom text">
                     <button>Generate meme</button>
