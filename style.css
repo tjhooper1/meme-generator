@@ -1,20 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #container{
     display: flex;
 }
 .left-block{
-    position: relative;
+    
 }
 #image{
-    width: 100%;
+    
 }
-.top-text{
-    position: absolute;
-    width: calc(#image - 100%);
-    color: white;
-    top: 0px;
-    text-align: center;
-    font-size: 4em;
+.left-block .top-text{
+    
 }
-.bottom-text{
-    position: relative;
+.left-block .bottom-text {
+    
 }

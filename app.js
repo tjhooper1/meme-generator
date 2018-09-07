@@ -22,12 +22,14 @@ function test() {
 
   function changeTopText(e){
       topText.addEventListener('input', e => {
-        console.log(e.target.value);
+          topMemeText.textContent = (e.target.value).toUpperCase();
+          console.log(e.target.value);
       });
       
   }
   function changeBottomText(e){
       bottomText.addEventListener('input', e => {
+        bottomMemeText.textContent = (e.target.value).toUpperCase();
         console.log(e.target.value);
       });
       
