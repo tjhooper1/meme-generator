@@ -2,17 +2,19 @@ let topText = document.querySelector('#topText');
 let bottomText = document.querySelector('#bottomText');
 let topMemeText = document.querySelector('.top-text');
 let bottomMemeText = document.querySelector('.bottom-text');
-
+let image = document.querySelector('#image');
+let download = document.querySelector('#download');
 //when form is submitted, grab the file data
 
 //set the image block src as the file from the input
 function test() {
-    var image = document.querySelector('#image');
+    
     var file    = document.querySelector('input[type=file]').files[0];
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
-        image.src = reader.result; 
+        image.style.backgroundImage = "url("+ reader.result +")";
+        download.href = reader.result;
     }, false);
   
     if (file) {
@@ -38,4 +40,3 @@ function test() {
   changeTopText();
   changeBottomText();
 
-  
